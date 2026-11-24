@@ -1,0 +1,23 @@
+# 사용법
+# - 이 파일은 '아이디.github.io' 저장소 최상단에 올림 (프로젝트 저장소 안에 두면 작동 안 함)
+# - 대상 경로: /job-intro-board/ (https://dotonuna.github.io/job-intro-board/)
+# - 주요 검색엔진(구글·빙·네이버·다음)은 차단하지 않음
+#   차단하면 페이지를 읽지 못해 index.html의 noindex 태그를 확인하지 못하고,
+#   외부 링크가 있을 때 주소만 검색 결과에 노출될 수 있기 때문임
+#   이 검색엔진들은 페이지에 들어와 noindex를 보고 색인에서 제외함
+# - 그 외 크롤러(AI 수집 봇 등)는 이 경로 접근 자체를 차단함
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Daumoa
+Allow: /
+
+User-agent: *
+Disallow: /job-intro-board/
